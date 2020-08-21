@@ -1,17 +1,11 @@
 import React, { Component } from "react";
 import Toolbar from '@material-ui/core/Toolbar';
 import AppBar from '@material-ui/core/AppBar';
-// import Input from '@material-ui/core/Input';
 import Card from '@material-ui/core/Card';
-// import TextField from '@material-ui/core/TextField';
 import CardContent from '@material-ui/core/CardContent';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-// import Tooltip from '@material-ui/core/Tooltip';
-// import Button from '@material-ui/core/Button';
-// import Paper from '@material-ui/core/Paper';
-// import GetAppIcon from '@material-ui/icons/GetApp';
-// import SaveIcon from '@material-ui/icons/Save';
+
 import { withStyles } from "@material-ui/core/styles";
 
 const styles = theme => ({
@@ -26,7 +20,7 @@ const styles = theme => ({
     width: '25%',
     height: '50px',
     fontSize: '25px',
-    backgroundColor: 'pink',
+    // backgroundColor: 'pink',
     color: ' black'
   },
 
@@ -34,8 +28,8 @@ const styles = theme => ({
     width: '25%',
     height: '50px',
     fontSize: '25px',
-    backgroundColor: 'blue',
-    color: ' white'
+    // backgroundColor: 'blue',
+    color: 'black'
   },
 
 
@@ -45,7 +39,7 @@ const styles = theme => ({
   },
   textbox: {
     height: '60px',
-    backgroundColor: '#bbb',
+    // backgroundColor: '#bbb',
     width: '100%',
     fontSize: '25px',
     textAlign: 'right',
@@ -138,12 +132,16 @@ class Simplecalculator extends Component {
     return (
       <div md={12} xs={12}>
         <div className={classes.root}>
-          <AppBar position="fixed" color="secondary">
-            <Toolbar>
-              <Typography variant="h4" className={classes.title}>
-                Simple Calculator
-                            </Typography>
-            </Toolbar>
+          <AppBar
+            position="static"
+            align="center"
+            color="secondary" >
+            <Toolbar >
+
+              <Typography variant="h6" >
+                Calculator App
+                        </Typography>
+            </Toolbar >
           </AppBar>
         </div>
         <br />
